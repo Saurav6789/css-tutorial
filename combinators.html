@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descentdant selector -space is the ancestor -descendant combinator */
+        div a {
+            color: olive;
+        }
+        p > a{
+            font-size: 2em;
+        }
+        /* no spaces -element that satisfies each individual selector is selected*/
+        p.x{
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi magnam libero culpa corporis repudiandae non maxime, maiores sit? Vel reprehenderit, quo facilis dignissimos exercitationem veniam quos distinctio veritatis nemo.
+        <p class="x">
+            Para 1
+            <a href="#">Some link</a>
+        </p>
+        <p>
+            Para 2
+            <a href="#">Some link</a>
+        </p>
+    </div>
+    <div class="x">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam iste atque dolorum praesentium fugiat? Dicta veniam quos iste consequuntur animi quidem illo, atque, enim adipisci exercitationem, quam tempora quo.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid earum atque praesentium, eaque dicta rem iure voluptates possimus cum, velit ea, nisi laboriosam recusandae sed! Vel ea nesciunt ratione quidem?
+        <p class="x">
+            Para 3
+            <a href="#">Some link</a>
+        </p>
+        <a href="#">Some link</a>
+    </div>
+    Para 4 (outside of all div)
+    <a href="#">Some link</a>
+</body>
+</html>

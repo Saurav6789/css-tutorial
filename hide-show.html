@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 10px;
+            border: 1 px solid black;
+        }
+        #message{
+          /*  display: none; */
+         /*   visibility: hidden; */
+         opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat accusamus natus, maiores vitae ducimus ratione omnis blanditiis quis soluta. Autem fugiat dolores totam facere veniam minima suscipit dicta fuga!
+    </div>
+    <div id="message">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae rerum, nesciunt, esse quis quod placeat minus, fugit consectetur temporibus ratione labore amet odio praesentium cum unde sit soluta voluptate ea!
+    </div>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quos nostrum ut optio maxime eaque, dicta assumenda natus saepe exercitationem. Placeat est reiciendis porro maiores facilis tenetur sequi ea delectus!
+    </div>
+    <script>
+        setTimeout(function(){
+         document.getElementById('message').style.display = 
+         'block';
+        },5000)
+    </script>
+</body>
+</html>
